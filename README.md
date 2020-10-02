@@ -1,6 +1,6 @@
-# Demo of Automated Machine Learning Model Training using AWS Glue ETL, Step Function, SageMaker
+# Automated Machine Learning Model Training using AWS Glue ETL, Step Function, SageMaker
 
-This is a demo of using Sagemaker for automated model training and hyperparameter tuning,  with Glue ETL and Step Functions orchestration. 
+This is a project of using Sagemaker for automated model training and hyperparameter tuning,  with Glue ETL and Step Functions orchestration. 
 
 
 ## How to deploy the demo in AWS
