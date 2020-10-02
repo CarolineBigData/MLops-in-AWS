@@ -1,0 +1,41 @@
+{
+    "ParameterRanges": {
+      "ContinuousParameterRanges": [
+        {
+          "MaxValue": "1",
+          "MinValue": "0.0000001",
+          "ScalingType":"Logarithmic",
+          "Name": "l1"
+        },
+        {
+          "MaxValue": "1",
+          "MinValue": "0.00001",
+          "ScalingType":"Logarithmic",
+          "Name": "learning_rate"
+        },
+        {
+          "MaxValue": "1",
+          "MinValue": "0.0000001",
+          "ScalingType":"Logarithmic",
+          "Name": "wd"
+        }
+      ],
+      "IntegerParameterRanges": [
+        {
+          "MaxValue": "1000",
+          "MinValue": "100",
+          "ScalingType":"Logarithmic",
+          "Name": "mini_batch_size"
+        }
+      ]
+    },
+    "ResourceLimits": {
+      "MaxNumberOfTrainingJobs": 100,
+      "MaxParallelTrainingJobs": 8
+    },
+    "Strategy": "Bayesian",
+    "HyperParameterTuningJobObjective": {
+      "MetricName": "validation:precision",
+      "Type": "Maximize"
+    }
+  }
