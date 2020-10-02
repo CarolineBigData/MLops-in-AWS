@@ -1,22 +1,7 @@
-# Demo of Automated Machine Learning Model Training using Live Streaming Data on AWS 
+# Demo of Automated Machine Learning Model Training using AWS Glue ETL, Step Function, SageMaker
 
 This is a demo of using Sagemaker for automated model training and hyperparameter tuning,  with Glue ETL and Step Functions orchestration. 
 
-## Architecture Overview
-
-![ML Demo - HLD](ML_Demo_HLD.png)
-
-## Directory Structure
-
-- [glue](https://github.com/yoyu777/ml-demo/tree/master/glue): Glue ETL script and dependencies
-- [lambda_functions](https://github.com/yoyu777/ml-demo/tree/master/lambda_functions): Source code of Lambda functions
-- [nodejs-streamer](https://github.com/yoyu777/ml-demo/tree/master/nodejs-streamer): Source code of the Streameer Client docker image
-- [notebooks](https://github.com/yoyu777/ml-demo/tree/master/notebooks): Example notebooks 
-- [sagemaker](https://github.com/yoyu777/ml-demo/tree/master/sagemaker): Sagemaker model training job and hyperparameter tuning job configuration templates
-- [step_function](https://github.com/yoyu777/ml-demo/tree/master/step_function): State Machine definition
-- [terraform](https://github.com/yoyu777/ml-demo/tree/master/terraform): Infrastructure as code and automated deploy scripts
-- [project_config.cfg](https://github.com/yoyu777/ml-demo/blob/master/project_config.cfg): project level configurations 
-- [requirements.txt](https://github.com/yoyu777/ml-demo/blob/master/requirements.txt): Python requirements for this project 
 
 ## How to deploy the demo in AWS
 
